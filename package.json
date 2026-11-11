@@ -18,7 +18,7 @@
     "apps/*"
   ],
   "scripts": {
-    "dev": "concurrently --raw \"npm run dev --prefix apps/server\"",
+    "dev": "concurrently --prefixColors auto --raw \"npm run dev --prefix apps/server\" \"npm run dev --prefix apps/ui\"",
     "test": "npm run test --ws --if-present",
     "build": "npm run build --ws --if-present",
     "start": "npm run start --prefix apps/server"
@@ -28,6 +28,7 @@
     "@types/node": "^26",
     "concurrently": "^10.0.7",
     "eslint": "^10.14.0",
+    "eslint-config-prettier": "^10.1.8",
     "globals": "^17.14.0",
     "prettier": "^3.9.10",
     "typescript": "^6",

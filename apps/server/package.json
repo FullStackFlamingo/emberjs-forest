@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx --inspect server.ts",
     "dev:tsc": "tsc --watch",
-    "build": "tsc && cp -R templates ./dist",
+    "build": "tsc",
     "start": "NODE_ENV=production node dist/server.js"
   },
   "author": "",

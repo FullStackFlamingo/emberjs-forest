@@ -15,7 +15,7 @@ async function init() {
   await fastify.register(Mercurius, {
     schema,
     resolvers,
-    graphiql: true,
+    graphiql: !isProd,
     /* csrfPrevention: {
       allowedContentTypes: ['application/json'],
       requiredHeaders: ['Authorization'],
